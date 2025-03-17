@@ -407,24 +407,7 @@
 
 </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuIcon = document.querySelector(".mobile-menu-icon");
-        const menuBlock = document.querySelector(".menu-block");
 
-        menuIcon.addEventListener("click", function () {
-            menuBlock.classList.toggle("open"); // Aç/kapat sınıfı ekle
-        });
-
-        // Menü dışına tıklanınca kapat
-        document.addEventListener("click", function (event) {
-            if (!menuBlock.contains(event.target) && !menuIcon.contains(event.target)) {
-                menuBlock.classList.remove("open");
-            }
-        });
-    });
-
-</script>
 
 
 
