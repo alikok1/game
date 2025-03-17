@@ -9,6 +9,26 @@
     .wheel-root{
 
     }
+    .main-root{
+
+
+        &.freespin-chart{
+            overflow: hidden;
+            .logo-item{
+                &.right-area{
+                    display: none;
+                }
+            }
+            .left-area{
+                .logo-item{
+                    display: none;
+                }
+            }
+        }
+    }
+    .wheel-root{
+        bottom: 100px;
+    }
 
 }
 
@@ -60,6 +80,15 @@
     .treasure-root{
         .treasure-container{
             justify-content: center;
+        }
+    }
+    .spin-btn{
+      margin: 50px 0 0;
+    }
+    .main-root{
+
+        &.freespin-chart{
+
         }
     }
 
@@ -168,6 +197,14 @@
             padding: 10px 20px;
             font-size: 28px;
         }
+    }
+    .wheel-root{
+        scale: 0.6;
+        bottom: 200px;
+    }
+    .spin-btn{
+        bottom: 400px;
+        position: relative;
     }
 
 
@@ -407,6 +444,11 @@
         transform: translateX(-100%); /* Başlangıçta gizli */
         transition: transform 0.3s ease-in-out;
     }
+    .middle-area{
+        &.wheel{
+            height: 800px;
+        }
+    }
 
     .menu-block.open {
         transform: translateX(0); /* Açıldığında görünür hale gelsin */
@@ -592,6 +634,9 @@
                 }
             }
         }
+    }
+    .wheel-root{
+        scale: 0.4;
     }
 }
 
@@ -816,5 +861,15 @@
                }
            }
         }
+    }
+    .wheel-root{
+        scale: 0.4;
+    }
+    .spin-btn{
+        bottom: 550px;
+        button{
+            font-size: 30px;
+        }
+
     }
 }
